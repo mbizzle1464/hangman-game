@@ -49,11 +49,15 @@ h1 {
 }
 
 .site-content {
-    padding-bottom: 50px;    
+    padding-bottom: 25px;    
 }
 
 .guess-content {
     padding-bottom: 50px;   
+}
+
+.btn {
+    margin-bottom: 5px;   
 }
 
 /* footer */ 
