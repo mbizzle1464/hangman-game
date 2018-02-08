@@ -1,0 +1,69 @@
+/* header */
+
+.bg-1 {
+    background-color: #000000;
+    border-bottom: 24px solid #5bc0de;
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Rammetto One', cursive;  
+}
+
+ a {
+    color: #f804bb;
+    font-size: 16px;
+    font-family: 'Rammetto One', cursive;
+    line-height: 150%; 
+    text-decoration: none;
+}
+
+
+
+/*body*/
+
+.image0, .image1, .image2, .image3, .image4, .image5, .image6, .image7 {
+    width: 80px;
+    height: 200px;  
+    background: url(../images/sprite.png);
+    background-position: 0px 0px;
+}
+
+.image1 {
+    background-position: -70px 0px;    
+}
+.image2 {
+    background-position: -150px 0px;
+}
+.image3 {
+    background-position: -220px 0px;
+}
+.image4 {
+    background-position: -295px 0px;
+}
+.image5 {
+    background-position: -373px 0px;
+}
+.image6 {
+    background-position: -450px 0px;
+}
+
+.site-content {
+    padding-bottom: 50px;    
+}
+
+.guess-content {
+    padding-bottom: 50px;   
+}
+
+/* footer */ 
+
+.bg-3 {
+    font-family: 'Rammetto One', cursive;
+    font-size: 16px;
+    color: #f804bb;
+    background-color: #000000;
+    border-top: 14px solid #5bc0de;
+    padding: 10px;
+    line-height: 150%;
+}
