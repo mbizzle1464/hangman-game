@@ -14,31 +14,20 @@
 </head>
 
 <body>
+    
+
     <!--div class="container"-->
-    <nav class="navbar navbar-default bg-1">
-        <div class="container-fluid">
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-right">
-                    <li>
-                        <a href="#"><h1>Michael Bizzle</h1></a>
-                    </li>
-            </div>
-            <!-- /.navbar-collapse -->
-            <!--/div-->
-        </div>
-            <!-- /.container-fluid -->
-    </nav>
-    </div>
-
-
     <div class="container">    
-        <div class="col-md-12 panel panel-default site-content">
+        <div class= "col-md-3"></div>
+        <div class="col-md-6 panel panel-default site-content">
 
             <div class="page-header">
                 <h1>States and Capitals Hangman Game</h1>
-                <p>Guess a letter to start playing</p>
-                
+                <p>Think you are a Real American? Then start guessing letters, brother.</p>
+                </p>
+                <audio id="play" autoplay loop controls>
+                    <source src="assets/music/hulk.mp3" type="audio/mpeg" />
+                </audio>
             </div>
 
             <div class="row">
@@ -50,23 +39,29 @@
                                 <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
                             </div>
                             <div class="col-md-12">
-                                <div class="panel panel-default">
+                                <div class="panel col-md-6 panel-default">
                                     <div class="panel-body">
                                         Guesses Left:
                                         <span id="numGuesses"></span>
                                     </div>
                                 </div>
-                                
-                                <div class="panel panel-default">
+                                <div id="guesses" class="panel col-md-6 panel-default">
                                     <div class="panel-body">
-                                        Win Counter:
+                                        Wrong Guesses:
+                                        <span id="wrongGuesses"></span>
+                                    </div>
+                                </div>
+
+                                <div class="panel col-md-6 panel-default">
+                                    <div class="panel-body">
+                                        American Wins:
                                         <span id="winCounter">0</span>
                                     </div>
                                 </div>
                                 
-                                <div class="panel panel-default">
+                                <div class="panel col-md-6 panel-default">
                                     <div class="panel-body">
-                                        Loss Counter:
+                                        Terrorist Wins:
                                         <span id="lossCounter">0</span>
                                     </div>
                                 </div>
@@ -76,15 +71,9 @@
                         </div>
                         <!-- /.col-md-12 -->
 
-                        <div id="guesses" class="col-md-12 panel panel-default">
-                            <h4>Wrong Guesses:</h4>
-                            <p>
-                                <span id="wrongGuesses"></span>
-                            </p>
-                        </div>
-                        <!-- /.col-md-12 -->
+                    
                         <div class="panel panel-default col-md-12 site-content guess-content">
-                            <img class="img-responsive container-fluid no-padding" src="assets/images/hulk.gif" alt="tumbleweed">
+                            <img class="img-responsive container-fluid no-padding" src="assets/images/sunny.gif" alt="sunny">
                         </div>
                         <!-- /.col-md-12 -->
                     </div>
@@ -95,6 +84,7 @@
             <!-- /.row-->
         </div>
         <!-- /.col-md-12 -->
+        <div class="col-md-3"></div>
     </div>
     <!-- /.container-->
         
@@ -130,3 +120,4 @@
 </body>
 
 </html>
+

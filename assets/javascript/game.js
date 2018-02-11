@@ -39,6 +39,7 @@ var winCount = 0;
 var loseCount = 0;
 var guessesLeft = 9;
 var rightGuessCounter = 0;
+var song;   
 
 //FUNCTIONS
 // This area is the functions of the game. Functions are the actions within game. 
@@ -186,7 +187,7 @@ function winLose() {
         winCount++;
         //Changes HTML
         document.getElementById('winCounter').innerHTML = winCount;
-        alert('You Win');
+        alert('Lady Liberty thanks you for your service! Keep winning!');
         reset();
     }
     // The other condition in the if else statement does the exact opposite to the rightGuessCounter. 
@@ -196,7 +197,7 @@ function winLose() {
         loseCount++;
         //Changes HTML
         document.getElementById('lossCounter').innerHTML = loseCount;
-        alert('You Lose');
+        alert('You lost to the terrorist.  Do not let that happen again!');
         reset();
     }
 }

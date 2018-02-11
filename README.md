@@ -4,13 +4,15 @@
 
 ## Hangman Requirements 
  
-1. The game will have some form of wordlist to select words from.  The game will only select words from the wordlist. 
+1. Listen up, brother! Hulk here. You think you know your states and state capitals? Prepare to challenge yourself to the limits. 
 
-2. There will be an on-screen image based representation of "lives." There will only be one single image file. 
+2. Clone this repository and open the index.html file to enjoy the fun. 
 
-3. All guessed letters will be displayed on screen. 
+3. The game will start when the player starts selecting letters.  Be careful! Only 9 lives before you lose to the terrorists. 
 
-4. The player doesn't lost multiple lives for making the same mistake multiple times. 
+4. Once you get your word correct, you will get an alert from Lady Liberty herself letting you know you won! 
 
-5. Only alphabetical letters are guessable (account for hyphens etc.). 
+5. Only alphabetical letters are guessable, so don't try anything else. 
+
+6. Good luck! 
 

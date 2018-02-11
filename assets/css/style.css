@@ -30,7 +30,10 @@ a:hover {
 
 /*body*/
 body {
-    background-color: #BF0A30;
+    background-image: url("../images/eagles.gif");
+    background-size: 200px; 
+    background-repeat: repeat;
+    background-color: #ffffff;
 }
 
 .site-content {
@@ -48,10 +51,11 @@ body {
 
 .bg-3 {
     background-image: url("../images/fabric.jpg");
+    background-size: 100px; 
     background-repeat: repeat;
     font-family: 'Rammetto One', cursive;
     font-size: 16px;
-    color: #BF0A30;
+    color: #ffffff;
     background-color: #ffffff;
     padding: 10px;
     line-height: 150%;
