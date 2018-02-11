@@ -1,8 +1,9 @@
 /* header */
 
 .bg-1 {
-    background-color: #000000;
-    border-bottom: 24px solid #5bc0de;
+    background-image: url("../images/fabric.jpg");
+    background-repeat: repeat;  
+    background-color: #ffffff;
     padding: 30px;
 }
 
@@ -11,7 +12,7 @@ h1 {
 }
 
  a {
-    color: #f804bb;
+    color: #BF0A30;
     font-size: 16px;
     font-family: 'Rammetto One', cursive;
     line-height: 150%; 
@@ -19,55 +20,39 @@ h1 {
 }
 
 
+a:hover {
+    text-decoration: none;
+    color: #BF0A30;
+    background-color: none; 
+
+}
+
 
 /*body*/
-
-.image0, .image1, .image2, .image3, .image4, .image5, .image6, .image7 {
-    width: 80px;
-    height: 200px;  
-    background: url(../images/sprite.png);
-    background-position: 0px 0px;
-}
-
-.image1 {
-    background-position: -70px 0px;    
-}
-.image2 {
-    background-position: -150px 0px;
-}
-.image3 {
-    background-position: -220px 0px;
-}
-.image4 {
-    background-position: -295px 0px;
-}
-.image5 {
-    background-position: -373px 0px;
-}
-.image6 {
-    background-position: -450px 0px;
+body {
+    background-color: #BF0A30;
 }
 
 .site-content {
     padding-bottom: 25px;    
+    margin-bottom: 25px;    ;   
 }
 
 .guess-content {
     padding-bottom: 50px;   
 }
 
-.btn {
-    margin-bottom: 5px;   
-}
+
 
 /* footer */ 
 
 .bg-3 {
+    background-image: url("../images/fabric.jpg");
+    background-repeat: repeat;
     font-family: 'Rammetto One', cursive;
     font-size: 16px;
-    color: #f804bb;
-    background-color: #000000;
-    border-top: 14px solid #5bc0de;
+    color: #BF0A30;
+    background-color: #ffffff;
     padding: 10px;
     line-height: 150%;
 }

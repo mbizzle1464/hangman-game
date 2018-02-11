@@ -17,29 +17,16 @@
     <!--div class="container"-->
     <nav class="navbar navbar-default bg-1">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#">
-                    <h1>Michael Bizzle</h1>
-                </a>
-            </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-right">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#"><h1>Michael Bizzle</h1></a>
                     </li>
             </div>
             <!-- /.navbar-collapse -->
             <!--/div-->
+        </div>
             <!-- /.container-fluid -->
     </nav>
     </div>
@@ -49,16 +36,9 @@
         <div class="col-md-12 panel panel-default site-content">
 
             <div class="page-header">
-                <h1> Mike's Hangman Game</h1>
-                <p>Guess That 80s Movie</p>
+                <h1>States and Capitals Hangman Game</h1>
                 <p>Guess a letter to start playing</p>
-                <div class="col-md-6 site-content">
-                    <div class="col-md-6">
-                        <div id="hangman_img" class="image0"></div>
-                    </div>
-                    <!-- /.col-md-12 -->
-                </div>
-                <!-- /.col-md-12 -->
+                
             </div>
 
             <div class="row">
@@ -67,30 +47,44 @@
                         <div id="word" class="col-md-12 panel panel-default">
                             <h4>Word to Guess</h4>
                             <div class="panel-body">
-                                <h2 id="answerArray">_ _ _ _ _ _ _</h2>
+                                <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
                             </div>
                             <div class="col-md-12">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Type letter here">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-info" type="button">Enter</button>
-                                    </span>
-                            
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        Guesses Left:
+                                        <span id="numGuesses"></span>
+                                    </div>
                                 </div>
-                                <!-- /input-group -->
+                                
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        Win Counter:
+                                        <span id="winCounter">0</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        Loss Counter:
+                                        <span id="lossCounter">0</span>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /.col-md-12 -->
                             
                         </div>
                         <!-- /.col-md-12 -->
 
-                        <div id="guesses" class="col-md-12 panel panel-default guess-content">
+                        <div id="guesses" class="col-md-12 panel panel-default">
                             <h4>Wrong Guesses:</h4>
                             <p>
-                                <strong id="wrongGuesses">
-                                    <em>nothing yet... guess a letter</em>
-                                </strong>
+                                <span id="wrongGuesses"></span>
                             </p>
+                        </div>
+                        <!-- /.col-md-12 -->
+                        <div class="panel panel-default col-md-12 site-content guess-content">
+                            <img class="img-responsive container-fluid no-padding" src="assets/images/hulk.gif" alt="tumbleweed">
                         </div>
                         <!-- /.col-md-12 -->
                     </div>
@@ -124,12 +118,12 @@
             </div>
 
     </div>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+    
 
     <!-- Footer -->
-    <footer class="footer navbar-fixed-bottom text-center bg-3">
+    <footer class="footer navbar-sticky-bottom text-center bg-3">
         <p>Copyright © 2018 Michael Bizzle </p>
     </footer>
 
